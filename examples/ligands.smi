@@ -1,0 +1,6 @@
+# SMILES  Name
+CC(C)CN(CC(O)C(Cc1ccccc1)NC(=O)OCC2OCCC2)S(=O)(=O)c3ccc(N)cc3  amprenavir
+CC(C)(C)NC(=O)C1CN(Cc2cccnc2)CCN1CC(O)CC(Cc3ccccc3)NC(=O)C(O)C(C)(C)C  indinavir
+N(C(=O)C(NC(=O)OCc1cncs1)C(C)C)C(Cc2ccccc2)CC(O)CN3CC4CCCCC4CC3C(=O)NC(C)(C)C  saquinavir
+CC(C)c1nc(CN(C)C(=O)NC(C(C)C)C(=O)NC(Cc2ccccc2)CC(O)CN3CC4CCCCC4CC3)cs1  ritonavir
+CC(C)CN(CC(O)C(Cc1ccccc1)NC(=O)C2CC2)S(=O)(=O)c3ccc(N)cc3  darunavir_like

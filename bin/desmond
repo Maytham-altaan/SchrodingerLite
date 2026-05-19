@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Shim → schrodinger desmond
+DIR="$(cd -P "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+exec "$DIR/schrodinger" desmond "$@"

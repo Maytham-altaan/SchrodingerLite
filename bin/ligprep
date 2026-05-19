@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Shim → schrodinger ligprep
+DIR="$(cd -P "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+exec "$DIR/schrodinger" ligprep "$@"

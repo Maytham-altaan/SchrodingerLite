@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "schrodingerlite"
+version = "1.0.0"
+description = "Open-source local replica of Schrödinger Suite (Maestro/Glide/LigPrep/PrepWizard/Prime/Desmond/Jaguar/MacroModel/Canvas/Strike)"
+requires-python = ">=3.10"
+authors = [{ name = "SchrodingerLite" }]
+license = { text = "MIT" }
+
+[project.scripts]
+schrodinger = "schrodingerlite.cli:main"
+maestro     = "schrodingerlite.viewer:main"
+prepwizard  = "schrodingerlite.protprep:main"
+ligprep     = "schrodingerlite.ligprep:main"
+glide       = "schrodingerlite.docking:main"
+prime       = "schrodingerlite.refine:main"
+desmond     = "schrodingerlite.md:main"
+jaguar      = "schrodingerlite.qm:main"
+macromodel  = "schrodingerlite.confsearch:main"
+canvas      = "schrodingerlite.cheminfo:main"
+strike      = "schrodingerlite.qsar:main"
+aidiscover  = "schrodingerlite.ai_pipeline:main"
+
+[tool.setuptools]
+packages = ["schrodingerlite"]
+
+[tool.setuptools.package-dir]
+schrodingerlite = "lib"

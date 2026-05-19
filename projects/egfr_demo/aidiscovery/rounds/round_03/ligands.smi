@@ -1,0 +1,9 @@
+O=C(Nc1ccc2[nH]nc(C(F)(F)F)c2c1)c1cnc2cc(N3CCOCC3)ccc2c1	EGFR-TM-001
+CC(=O)N1CCN(c2ccc3nc(C)c(Nc4cccc(C(F)(F)F)c4)nc3c2)CC1	EGFR-TM-002
+O=C(Nc1cc(F)ccc1-c1nc2cc(N3CCOCC3)ccc2[nH]c1=O)c1ccncc1	EGFR-TM-003
+Cc1cc2nc(Nc3ccc(F)cc3C(F)(F)F)ncc2cc1N1CCN(C)CC1	EGFR-TM-006
+Cc1nn(-c2ccc(N3CCOCC3)nc2)c2ccc(NC(=O)c3ccc(C(F)(F)F)cc3)cc12	EGFR-TM-010
+COC(=O)N1CCN(c2ccc3nc(Nc4ccc(F)cc4-c4ccncc4)c(C)nc3c2)CC1	EGFR-TM-012
+Cn1c(-c2ccc(C(F)(F)F)cc2)nc2cc(N3CCOCC3)c(C(=O)Nc3ccncc3)cc21	EGFR-TM-013
+Cc1ccc(Nc2cc3cc(N4CCOCC4)ccc3nc2C(=O)Nc2cccnc2)cc1F	EGFR-TM-014
+O=C(Nc1ccc(C(F)(F)F)cc1)c1cnc2n1-c1ccc(N3CCOCC3)cc1-2	EGFR-TM-015

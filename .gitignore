@@ -1,0 +1,47 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+.eggs/
+build/
+dist/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Environment / IDE
+.env
+.envrc
+.venv/
+venv/
+.vscode/
+.idea/
+.DS_Store
+*.swp
+
+# Large MD/docking intermediates — regenerable by re-running the pipeline
+projects/**/aidiscovery/_mmgbsa/
+projects/**/aidiscovery/_md_stability/*/traj.dcd
+projects/**/aidiscovery/_md_stability/*/start.pdb
+projects/**/aidiscovery/_md_stability/*/log.csv
+projects/**/aidiscovery/_md_stability/*/pose.sdf
+projects/**/aidiscovery/_top_pose_cache/
+projects/**/aidiscovery/_wt_pose_cache/
+projects/**/aidiscovery/_selectivity/poses/
+projects/**/aidiscovery/_wt_receptor/1M17.pdb
+projects/**/aidiscovery/rounds/round_*/ligprep/*.pdbqt
+projects/**/aidiscovery/rounds/round_*/ligprep/*.sdf
+projects/**/aidiscovery/rounds/round_*/docking/poses/*.pdbqt
+projects/**/aidiscovery/top_hits_view.html
+projects/**/aidiscovery/selectivity_view.html
+projects/**/aidiscovery/maestro_view.html
+
+# Cached 3Dmol.js (downloaded on first viewer run)
+share/3Dmol-min.js
+
+# Manuscript build artifacts
+*.aux
+*.log
+*.out

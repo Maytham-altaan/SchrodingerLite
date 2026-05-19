@@ -1,0 +1,10 @@
+COc1ccc(NC(=O)c2cnc3cc(N4CCN(C)CC4)ccc3n2)cc1Cl	EGFRm-002
+CC(=O)N1CCN(c2ccc3nc(C)n(-c4ccc(F)cc4C(F)(F)F)c(=O)c3c2)CC1	EGFRm-003
+FC(F)(F)c1cccc(Nc2cnc3cc(N4CCOCC4)ccc3n2)c1	EGFRm-004
+CC(=O)N1CCN(c2cccc(-n3c(=O)cc(C)n(Cc4ccccc4F)c3=O)c2)CC1	EGFRm-006
+COc1cc2ncnc(Nc3ccc(C4CCNCC4)cc3)c2cc1OC	EGFRm-007
+CC(C)(C)Nc1ccc2c(=O)cc(-c3ccc(N4CCOCC4)cc3)[nH]c2c1	EGFRm-008
+CN1CCN(c2ccc(C(=O)Nc3ccc4c(c3)ncn4C)cc2)CC1	EGFRm-009
+CC(C)c1nc2ccc(N3CCOCC3)cc2c(=O)n1-c1ccc(F)c(Cl)c1	EGFRm-010
+CC(=O)N1CCN(c2cc3ccc(Nc4ccc(F)c(Cl)c4)nc3nc2C)CC1	EGFRm-012
+Cc1ccc(-c2cc3cc(N4CCN(C)CC4)ccc3[nH]2)nc1NC(=O)C(C)(C)F	EGFRm-014

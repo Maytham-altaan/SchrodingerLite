@@ -1,0 +1,25 @@
+# SchrodingerLite end-to-end demo: dock indinavir analogues into HIV-1 protease
+# Run:  schrodinger workflow run examples/hiv_protease_demo.yml
+
+name: hiv_protease_demo
+
+receptor:
+  source: "1HSG"          # PDB ID (auto-downloaded)
+  ph: 7.4
+  keep_water: false
+  keep_hetero: true       # we'll extract the co-crystal ligand
+  extract_ligand: "MK1"   # indinavir, becomes the grid-box reference
+  minimize: false         # set true for ~3 min OpenMM refinement
+
+ligands:
+  input: "examples/ligands.smi"
+  n_confs: 10
+  ph: 7.4
+  ff: "MMFF94s"
+  tautomers: false
+
+docking:
+  backend: "vina"         # or "smina"
+  exhaustiveness: 8
+  n_poses: 9
+  padding: 8.0            # Å padding around reference ligand

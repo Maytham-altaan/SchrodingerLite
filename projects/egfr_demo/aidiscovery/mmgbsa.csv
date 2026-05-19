@@ -1,0 +1,6 @@
+name,smiles,vina_mut,mmgbsa_mut,mmgbsa_wt,ddG_mmgbsa
+EGFR-TM-014,Cc1ccc(Nc2cc3cc(N4CCOCC4)ccc3nc2C(=O)Nc2cccnc2)cc1F,-9.397,-0.43,-2.31,-1.88
+EGFRm-002,O=C(Nc1ccc2[nH]nc(C(F)(F)F)c2c1)c1cnc2cc(N3CCOCC3)ccc2c1,-9.683,9.63,20.53,10.9
+EGFRm-009,CC(=O)N1CCN(c2ccc3c(=O)n(Cc4ccc(F)cc4C(F)(F)F)c(C)nc3c2)CC1,-9.91,32.42,56.28,23.86
+EGFR-TM-013,Cn1c(-c2ccc(C(F)(F)F)cc2)nc2cc(N3CCOCC3)c(C(=O)Nc3ccncc3)cc21,-9.328,48.56,52.8,4.24
+EGFR-TM-012,COC(=O)N1CCN(c2ccc3nc(Nc4ccc(F)cc4-c4ccncc4)c(C)nc3c2)CC1,-9.678,81.57,76.99,-4.58

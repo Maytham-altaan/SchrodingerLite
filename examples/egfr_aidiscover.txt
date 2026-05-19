@@ -1,0 +1,25 @@
+Design novel kinase inhibitors targeting the ATP-binding pocket of human
+Epidermal Growth Factor Receptor (EGFR, UniProt P00533) — specifically the
+T790M/L858R double-mutant form that drives resistance to first-generation
+TKIs in non-small-cell lung cancer.
+
+Binding-site features to exploit:
+  • The hinge region (Met793 backbone) — H-bond acceptor + donor possible.
+  • The gatekeeper Met790 (mutated from Thr790) — bulky hydrophobic pocket,
+    sensitive to steric clashes; small flexible groups preferred near it.
+  • The DFG-in conformation Asp855 carboxylate — H-bond donor reaches it.
+  • A solvent-exposed front pocket — solubilizing groups (morpholine, piperazine)
+    tolerated.
+
+Hard requirements:
+  • Avoid the quinazoline-4-amine scaffold of gefitinib/erlotinib
+    (we want novelty against first-gen TKIs).
+  • Avoid the acrylamide warhead of osimertinib unless absolutely needed —
+    reversible binders preferred for safety.
+  • Must be selective vs wild-type EGFR (i.e., exploit T790M's bulkier
+    pocket — molecules should have a feature that fits 790M but clashes
+    with smaller Thr790).
+  • Oral-druggable: MW 350-500, LogP 2-4, TPSA < 120 Å², HBD ≤ 3.
+
+Inspiration corner — known actives whose scaffolds you should NOT copy:
+osimertinib, rociletinib, olmutinib, naquotinib. Invent something different.

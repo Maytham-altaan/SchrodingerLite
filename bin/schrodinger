@@ -1,0 +1,42 @@
+#!/usr/bin/env bash
+# SchrodingerLite master launcher — runnable from anywhere.
+# Activates the 'schrodinger-lite' conda env, then dispatches.
+set -e
+
+# Locate install root (resolve symlinks so /usr/local/bin/schrodinger works)
+SRC="${BASH_SOURCE[0]}"
+while [ -h "$SRC" ]; do
+  DIR="$(cd -P "$(dirname "$SRC")" && pwd)"
+  SRC="$(readlink "$SRC")"
+  [[ "$SRC" != /* ]] && SRC="$DIR/$SRC"
+done
+SCHRO_HOME="$(cd -P "$(dirname "$SRC")/.." && pwd)"
+
+export SCHRODINGER_LITE_HOME="$SCHRO_HOME"
+export SCHRODINGER_LITE_PROJECTS="$SCHRO_HOME/projects"
+
+# Find a conda installation
+CONDA_BIN=""
+for c in "$HOME/miniforge3/bin/conda" "$HOME/miniconda3/bin/conda" \
+         "$HOME/anaconda3/bin/conda" "/opt/homebrew/Caskroom/miniforge/base/bin/conda" \
+         "/opt/homebrew/anaconda3/bin/conda" "/usr/local/anaconda3/bin/conda" \
+         "$(command -v conda)"; do
+  if [ -x "$c" ]; then CONDA_BIN="$c"; break; fi
+done
+
+if [ -z "$CONDA_BIN" ]; then
+  echo "ERROR: conda not found. Install Miniforge first:"
+  echo "  brew install --cask miniforge"
+  echo "Then re-run: $SCHRO_HOME/install.sh"
+  exit 1
+fi
+
+# shellcheck disable=SC1091
+source "$(dirname "$CONDA_BIN")/../etc/profile.d/conda.sh"
+conda activate schrodinger-lite 2>/dev/null || {
+  echo "ERROR: conda env 'schrodinger-lite' not found."
+  echo "Install it with:  $SCHRO_HOME/install.sh"
+  exit 1
+}
+
+exec python -m schrodingerlite.cli "$@"

@@ -1,0 +1,51 @@
+name: schrodinger-lite
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  # Core Python
+  - python=3.11
+  - pip
+
+  # Cheminformatics (Canvas / LigPrep core)
+  - rdkit
+  - openbabel
+  - meeko                 # ligand prep for Vina/PDBQT
+
+  # Docking (Glide)        — smina dropped: pulls old libboost/icu that conflict
+  - vina                   # AutoDock Vina via Python bindings
+
+  # Protein preparation (PrepWizard)
+  - pdbfixer
+  - biopython
+
+  # Molecular Dynamics (Desmond)
+  - openmm
+  - mdanalysis
+  - mdtraj
+
+  # Quantum Mechanics (Jaguar) — psi4 dropped on Mac due to conflicts;
+  # the qm module falls back to xtb when psi4 is missing.
+  - xtb
+
+  # Visualization (Maestro)
+  - py3dmol
+  - matplotlib
+
+  # QSAR / ML (Strike)
+  - scikit-learn
+  - pandas
+  - numpy
+  - scipy
+
+  # Workflow / CLI
+  - click
+  - rich
+  - tqdm
+  - pyyaml
+  - requests
+
+  - pip:
+      - anthropic         # Claude API for de novo design (aidiscover)
+      - posebusters       # docking pose validation
+      - useful-rdkit-utils
