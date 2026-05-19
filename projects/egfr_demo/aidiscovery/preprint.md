@@ -1,6 +1,6 @@
 # Iterative LLM-driven de novo drug design with multi-method consensus scoring: a case study on EGFR T790M/L858R
 
-**Maytham Muthanna Muneam¹\***
+**Maytham Muthanna Muneam¹\*** (ORCID: [0000-0003-4528-4716](https://orcid.org/0000-0003-4528-4716))
 
 ¹ Department of Clinical Pharmacy, Medical City / Baghdad Teaching Hospital, Baghdad, Iraq.
 FIBMS — Fellowship of the Iraqi Board for Medical Specializations in Clinical Pharmacy.
@@ -106,7 +106,7 @@ Each lead's docked complex is propagated for 2 ns in OBC2 implicit solvent using
 
 ### 2.7 Software and reproducibility
 
-All code is in pure Python (3.11) and runs on a single workstation. Dependencies: RDKit 2024.x, OpenMM 8.x, OpenFF Toolkit 0.18, openmmforcefields 0.16, MDAnalysis 2.x, AutoDock Vina 1.2, OpenBabel 3.x, PDBFixer, Anthropic Python SDK. No commercial software is required. The full codebase, environment specification, prepared receptor, all intermediate files, and final tables are available at [GitHub URL TBD].
+All code is in pure Python (3.11) and runs on a single workstation. Dependencies: RDKit 2024.x, OpenMM 8.x, OpenFF Toolkit 0.18, openmmforcefields 0.16, MDAnalysis 2.x, AutoDock Vina 1.2, OpenBabel 3.x, PDBFixer, Anthropic Python SDK. No commercial software is required. The full codebase, environment specification, prepared receptor, all intermediate files, and final tables are available at https://github.com/Maytham-altaan/SchrodingerLite.
 
 ---
 
@@ -184,7 +184,7 @@ We demonstrate that a frontier large language model, embedded in a closed loop w
 ## Data and code availability
 
 All code, environment specification, prepared receptors, intermediate files, ranked CSVs, and figures are at:
-- **GitHub:** [URL TBD]
+- **GitHub:** https://github.com/Maytham-altaan/SchrodingerLite
 - **Archived release:** [Zenodo DOI TBD]
 
 The EGFR demo is the canonical reproducible example at `projects/egfr_demo/`. Re-running the full pipeline:
